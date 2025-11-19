@@ -1,4 +1,5 @@
 from random import randint
+import tkinter
 
 items = ["sword", "axe", "mace", "rose", "dandelion", "poppy"]
 
@@ -19,11 +20,14 @@ class inventory:
                 return True
         return False
     
-    def printcontent(self) :
+    def getcontents(self) :
         contentlist = []
         for item in self.contents :
-            contentlist.append(item.name)
-        print(contentlist)
+            contentlist.append(item)
+        return contentlist
+
+    def getitem(self, index) :
+        return self.contents[index]
 
 class item :
     def __init__(self, name) :
@@ -31,14 +35,3 @@ class item :
 
     def use(self) : 
         print("You use " + self.name)
-        
-
-
-inv = inventory()
-
-i = 0
-while i <= 10 :
-    inv.addrandom()
-    i += 1
-
-inv.printcontent()
