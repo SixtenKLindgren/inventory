@@ -1,0 +1,2 @@
+## Inventory
+Jag har gjort ett inventory där man kan lägga till, ta bort och använda saker. Jag har också gjort ett enkelt gui med hjälp av tkinter. Jag behövde lära mig hur man använde tkinter och särskillt hur man använder grid funktionerna för att få ett program som ser bättre ut.
